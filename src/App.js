@@ -1,7 +1,10 @@
 import './App.css';
 
 function Square({value}) {
-  return <button className="square">{value}</button>
+  function handleClicks() {
+    console.log("Clicked !");
+  }
+  return <button className="square" onClick={handleClicks}>{value}</button>
 }
 export default function Board() {
 
